@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio">
-    <meta name="author" content="Generation Brasil">
+    <meta name="author" content="Tiago Alves">
     <meta name="keywords" content="HTML, CSS, JavaScript">
+
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+   
+    <!-- Link para a Folha de Estilo da Página - CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
     <title>Meu Perfil</title>
 </head>
 
@@ -15,7 +20,7 @@
      <header>
 
         <!-- Div Conteudo do cabeçalho-->
-         <div id="header_content">
+         <div id="header_content" class="flex">
 
             <!-- Titulo do Cabeçalho-->
              <div id="titulo">
@@ -53,51 +58,61 @@
       <main>
 
         <!-- Seção Sobre você-->
-         <section id="about">
+         <section id="about" class="flex_start">
 
             <!-- Titulo da Seção-->
              <h2>Sobre Tiago</h2>
 
              <!-- Conteúdo da Seção-->
-              <div id="conteudo">
+              <div id="conteudo" class="flex">
 
                 <!-- Imagem do criador do conteúdo-->
                  <img 
                     src="https://ik.imagekit.io/tkeh5vknk/Perfil.jpeg?updatedAt=1736254307376" 
-                    alt="Foto do criador desse conteudo">
+                    alt="Foto do criador desse conteudo"
+                    class="img_profile"
+
+                    >
 
                     <!-- Textoo sobre o criador do conteúdo-->
                      <article id="sobre_texto">
                         <p>
                             Integrante da 78ª Turma de Java Full Stack da Generation Brasil,  onde aprendi sobre as principais tecnologias do mercado, como:
-                            - Java
-                            - Spring Tools
-                            - SQL
-                            - JavaScript
-                            - React
-
-                            Além de ter conquistado certificações profissionalizantes nas áreas de Desenho Gráfico e Desenvolvimento de Sistemas C#. Aonde eu aprendi a trabalhar com:
-
-                            Adobe Photoshop               
-                            Adobe illustrator                 
-                            Adobe Premiere
-                            CorelDraw
-
-                            Visual Studios
-                            My SQL
                         </p>
+                        
+                        <ul id="list">
+                            <li> Java</li>
+                            <li>Spring Tools</li>
+                            <li> SQL</li>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>JavaScript</li> 
+                            <li>React</li> 
+                        </ul>
+                        
+                        <p>
+                            Além de ter conquistado certificações profissionalizantes nas áreas de Desenvolvimento de Sistemas C# e de Desenho Gráfico. Aonde eu aprendi a trabalhar com:
+                        </p>
+
+                        <ul id="list">
+                            <li>Adobe Photoshop </li>              
+                            <li>Adobe illustrator</li>                 
+                            <li>Adobe Premiere</li>
+                            <li>CorelDraw</li>
+                        </ul>
+                            
                      </article>
               </div>
          </section>
 
          <!-- Seção contendo um vídeo de sua preferência-->
-          <section id="video">
+          <section id="video" class="flex_start">
 
             <!-- Título da Seção-->
              <h2>Meu vídeo favorito:</h2>
 
              <!-- Vídeo da Seção-->
-              <div id="youtube">
+              <div id="youtube" class="flex">
                 <iframe 
                     width="560"
                     height="315"
@@ -112,19 +127,19 @@
       </main>
 
       <!-- Rodapé da Página (footer)-->
-       <footer>
+       <footer class="flex">
 
         <!-- Seção de Contato - Redes Sociais-->
          <section id="redes_sociais">
 
             <a href="www.linkedin.com/in/tiago-salves" target="_blank">
-                <img src="assets/img/linkedin.svg" alt="Linkedin">
+                <img src="assets/img/linkedin.svg" alt="Linkedin" class="social_icon">
             </a>
             <a href="https://github.com/TiihAlves" target="_blank">
-                <img src="assets/img/github.svg" alt="Github">
+                <img src="assets/img/github.svg" alt="Github" class="social_icon">
             </a>
             <a href="https://www.instagram.com/alves.tiih/" target="_blank">
-                <img src="assets/img/instagram.svg" alt="Instagram">
+                <img src="assets/img/instagram.svg" alt="Instagram" class="social_icon">
             </a>
 
          </section>
