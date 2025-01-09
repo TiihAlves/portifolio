@@ -121,7 +121,7 @@ p{
 
  .img_profile{
     width: 300px;
-    border-radius: 30px;
+    border-radius: 70px;
  }
 
  /* Estilização da Seção vídeo */
@@ -237,7 +237,7 @@ p{
 
  /* Estilização da seção mapa*/
 
- #mapa{
+ #map{
     width: 480px;
     flex-direction: column;
     gap: 3rem;

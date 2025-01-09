@@ -1,4 +1,5 @@
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+let mapa = document.querySelector("#mapa");
 
 formulario.addEventListener('submit', function(event) {
   
@@ -47,3 +48,46 @@ formulario.addEventListener('submit', function(event) {
     campoMessage.value = ''
 
   });
+
+    //Evento de clique (onfocus)
+function highLightInput(element){
+    element.style.backgroundColor="#6959CD"
+    }
+
+    //Evento de clique fora (onblur)
+function removeHighLight(element){
+    element.style.backgroundColor=""
+}
+
+    //Evento Zoom Mapa
+function mapaZoom(){
+    mapa.style.width="500px"
+    mapa.style.height="350px"
+}
+
+function mapaNormal(){
+    mapa.style.width="400px"
+    mapa.style.height="250px"
+}
+
+   //Evento destaque de cor
+function destaque(element){
+    element.style.color = "#6959CD"
+   }
+
+   //Evento remove destaque
+function removeDestaque(element){
+    element.style.color = "#000"
+}
+
+    // Evento de zoom Imagem
+function zoomImagem(element){
+    element.style.width="350px"
+}
+
+function removeZoomImagem(element){
+     element.style.width="300px"
+}
+
+
+   

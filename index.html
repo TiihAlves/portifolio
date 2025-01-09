@@ -70,24 +70,26 @@
                  <img 
                     src="https://ik.imagekit.io/tkeh5vknk/Perfil.jpeg?updatedAt=1736254307376" 
                     alt="Foto do criador desse conteudo"
+                    onmousemove="zoomImagem(this)"
+                    onmouseout="removeZoomImagem(this)"
                     class="img_profile"
 
                     >
 
                     <!-- Textoo sobre o criador do conteúdo-->
                      <article id="sobre_texto">
-                        <p>
+                        <p >
                             Integrante da 78ª Turma de Java Full Stack da Generation Brasil,  onde aprendi sobre as principais tecnologias do mercado, como:
                         </p>
                         
-                        <ul id="list">
-                            <li> Java</li>
-                            <li>Spring Tools</li>
-                            <li> SQL</li>
-                            <li>Html</li>
-                            <li>Css</li>
-                            <li>JavaScript</li> 
-                            <li>React</li> 
+                        <ul id="list" >
+                            <li onmousemove="destaque(this)" onmouseout="removeDestaque(this)"> Java</li>
+                            <li onmousemove="destaque(this)" onmouseout="removeDestaque(this)">Spring Tools</li>
+                            <li onmousemove="destaque(this)" onmouseout="removeDestaque(this)"> SQL</li>
+                            <li onmousemove="destaque(this)" onmouseout="removeDestaque(this)">Html</li>
+                            <li onmousemove="destaque(this)" onmouseout="removeDestaque(this)">Css</li>
+                            <li onmousemove="destaque(this)" onmouseout="removeDestaque(this)">JavaScript</li> 
+                            <li onmousemove="destaque(this)" onmouseout="removeDestaque(this)">React</li> 
                         </ul>
                         
                         <p>
@@ -95,10 +97,10 @@
                         </p>
 
                         <ul id="list">
-                            <li>Adobe Photoshop </li>              
-                            <li>Adobe illustrator</li>                 
-                            <li>Adobe Premiere</li>
-                            <li>CorelDraw</li>
+                            <li onmousemove="destaque(this)" onmouseout="removeDestaque(this)">Adobe Photoshop </li>              
+                            <li onmousemove="destaque(this)" onmouseout="removeDestaque(this)">Adobe illustrator</li>                 
+                            <li onmousemove="destaque(this)" onmouseout="removeDestaque(this)">Adobe Premiere</li>
+                            <li onmousemove="destaque(this)" onmouseout="removeDestaque(this)">CorelDraw</li>
                         </ul>
                             
                      </article>
@@ -147,6 +149,7 @@
          <h3>Feito com ❤ por Tiago Alves em parceria com Generation Brasil - 2025</h3>
        </footer>
 
-       
+       <!-- Script JavaScript-->
+		 <script src="assets/js/script.js"></script>
 </body>
 </html>

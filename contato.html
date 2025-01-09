@@ -61,26 +61,26 @@
                 <form action="#" method="submit" id="formulario">
                     
                     <label for="name">Nome: </label>
-                    <input id="name" type="text" name="name" placeholder="Digite seu nome">
+                    <input id="name" type="text" name="name" onfocus="highLightInput(this)" onblur="removeHighLight(this)" placeholder="Digite seu nome">
                     <span id="txtNome"></span>
 
                     <label for="email">E-mail: </label>
-                    <input id="email" type="text" name="email" placeholder="Digite seu email">
+                    <input id="email" type="text" name="email" onfocus="highLightInput(this)" onblur="removeHighLight(this)" placeholder="Digite seu email">
                     <span id="txtEmail"></span>
 
                     <label for="subject">Assunto: </label>
-                    <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem">
+                    <input id="subject" type="text" name="subject" onfocus="highLightInput(this)" onblur="removeHighLight(this)" placeholder="Digite o título da mensagem">
                     <span id="txtSubject"></span>
 
                     <label for="message">Mensagem: </label>
-                    <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
+                    <textarea id="message" name="message" onfocus="highLightInput(this)" onblur="removeHighLight(this)" placeholder="Digite sua mensagem"></textarea>
 
                     <button type="submit">Enviar</button>
 
                 </form>
 
                 <!-- Seção do Google Maps -->
-                <section id="mapa" class="flex_start">
+                <section id="map" class="flex_start">
 
                     <div id="endereco">
 						<p>Antonio Oliverira Cunha, 261</p>
@@ -97,6 +97,8 @@
                         allowfullscreen
                         aria-hidden="false"
                         tabindex="0"
+						onmousemove="mapaZoom()"
+						onmouseout="mapaNormal()"
                         id="mapa">
 					</iframe>
                 </section>
