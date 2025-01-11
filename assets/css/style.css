@@ -30,6 +30,23 @@ html {
 body {
     background: var(--gray-200);
     color: var(--black-800);
+    
+}
+ 
+
+.botao {
+   text-align: center;
+   padding: 12px 32px;
+   background: none;
+   border: 1px solid var(--purple-800);
+   color: var(--purple-800);
+   border-radius: 10px;
+   font-weight: 700;
+}
+
+.botao:hover {
+   background: var(--purple-800);
+   color: var(--white);
 }
 
 /* Definindo as configurações de títulos e paragrafo */
@@ -53,6 +70,7 @@ p{
     text-align: justify;
     padding: 0.5rem 0;
 }
+
 
 /* Definindo as configurações do Flexbox */
 
@@ -86,14 +104,71 @@ p{
 }
 
 #menu li a{
-    text-decoration: none;
+    text-decoration:none;
     color: var(--white);
     font-size: 20px;
+    font-weight: bold;
 }
 
 #menu li a:hover{
     color: var(--purple-200);
-    text-decoration: underline;
+    
+}
+
+/* ESTILIZAÇÃO DA SEÇÃO HOME */
+
+#home{
+   flex-direction: row;
+   margin: 2rem auto;
+   width: 90%;
+}
+
+.home_container {
+   margin: 16px auto;
+   display: flex;
+   justify-content: center;    
+   align-items: center;  
+   gap: 20px;      
+}
+
+.home_container p, h1,
+h4 {
+   text-align: center;
+   
+}
+
+.home_container h4 {
+   font-size: 16px;
+   font-weight: bold;
+   margin: 16px 0;
+}
+
+.home_container h1 {
+   font-size: 36px;
+   line-height: 48px; 
+   font-weight: bold;
+}
+
+.home_container p {
+   margin: 16px 0;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: bold;
+}
+
+.home_container .botao {
+   width: 150px; 
+}
+
+.home_content {   
+   display: flex;
+   justify-content: center;    
+   align-items: center;       
+   flex-direction: column;
+}
+
+.home_content_img {
+   width: 500px; 
+   height: 350px;
 }
 
  /* Estilização da Seção About */
@@ -119,10 +194,20 @@ p{
      
  }
 
+ #list li:hover{
+   display: inline;
+   color: var(--purple-500);
+     
+ }
+
  .img_profile{
     width: 300px;
-    border-radius: 70px;
+    border-radius: 200px;
  }
+ .img_profile:hover{
+   width: 350px;
+   border-radius: 50px;
+}
 
  /* Estilização da Seção vídeo */
 
