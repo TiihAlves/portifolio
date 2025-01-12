@@ -7,7 +7,7 @@
     <meta name="author" content="Tiago Alves">
     <meta name="keywords" content="HTML, CSS, JavaScript">
 
-    <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+    <link rel="icon" type="image/svg" href="./assets/img/icone.png" />
    
     <!-- Link para a Folha de Estilo da Página - CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -23,13 +23,22 @@
          <div id="header_content" class="flex">
 
             <!-- Titulo do Cabeçalho-->
-             <div id="titulo">
+             <div id="logo">
+                <div id="titulo">
 
-                <!-- Seu Nome-->
-               <h1>Tiago Alves</h1>
+                    <!-- Seu Nome-->
+                <h1>TH-Land</h1>
 
-             </div>
+                </div>
 
+                <div>
+                    <img 
+                    id="icon_logo"
+                    src="assets/img/palmeira2.png" 
+                    alt="icone titulo"
+                    height="70px">
+                </div>
+            </div>
              <!-- Conteudo do Menu da Página (header)-->
               <div id="menu">
 
@@ -63,11 +72,11 @@
             <!-- Texto da Seção Home -->
             <article id="home_texto" class="home_content">
 
-                <h4>Seja Bem-vindo(a) ao meu Perfil</h4>
+                <p>Seja Bem-vindo(a) a minha Ilha</p>
                 <h1>Aqui você irá me conhecer e conhecer meus projetos</h1>
-                <p>
+                <h2>
                     Sou um desenvolvedor Java Full Stack com um grande estusiasmo por tecnologia. Convido você a explorar alguns dos meus projetos clicando no botão abaixo.
-                </p>
+                </h2>
 
                 <a class="botao" target="_blank" href="https://github.com/TiihAlves">
                     Explorar
@@ -77,7 +86,7 @@
 
             <!-- Imagem da Seção Home -->
             <article id="home_imagem" class="home_content">
-                <img class="home_content_img" src="./assets/img/astronauta.svg" alt="Capacete de Astronauta Animado">
+                <img class="home_content_img" src="./assets/img/palmeira.png" alt="ilha com palmeira">
             </article>
 
         </section>
@@ -89,7 +98,7 @@
              <h2>Sobre Tiago</h2>
 
              <!-- Conteúdo da Seção-->
-              <div id="conteudo" class="flex">
+              <div id="conteudo" >
 
                 <!-- Imagem do criador do conteúdo-->
                  <img 
@@ -102,31 +111,99 @@
                     <!-- Textoo sobre o criador do conteúdo-->
                      <article id="sobre_texto">
                         <p >
-                            Integrante da 78ª Turma de Java Full Stack da Generation Brasil,  onde aprendi sobre as principais tecnologias do mercado, como:
-                        </p>
-                        
-                        <ul id="list" >
-                            <li> Java</li>
-                            <li>Spring Tools</li>
-                            <li> SQL</li>
-                            <li>Html</li>
-                            <li>Css</li>
-                            <li>JavaScript</li> 
-                            <li>React</li> 
-                        </ul>
-                        
-                        <p>
-                            Além de ter conquistado certificações profissionalizantes nas áreas de Desenvolvimento de Sistemas C# e de Desenho Gráfico. Aonde eu aprendi a trabalhar com:
+                            Integrante da 78ª Turma de Java Full Stack da Generation Brasil,
+                            onde aprendi sobre as principais tecnologias do mercado.
+                            Além de ter curso técnico em informática e conquistado certificações profissionalizantes nas áreas de
+                            Desenvolvimento de Sistemas C# e de Desenho Gráfico.
                         </p>
 
-                        <ul id="list">
-                            <li>Adobe Photoshop </li>              
-                            <li>Adobe illustrator</li>                 
-                            <li>Adobe Premiere</li>
-                            <li>CorelDraw</li>
-                        </ul>
-                            
-                     </article>
+                        <div id="table">
+                            <table class="border_table">
+                                <thead>
+                                    <tr class="align_table">
+                                        <td >Habilidades com programas de:</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Desenvolvimento de sistemas:</th>
+                                        <th>Desenho Gráfico:</th>
+                                    </tr>
+                                </thead>                    
+                                
+                                <tbody>
+                                    <tr> 
+                                        <td>Java
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                                alt="java logo"  />
+                                        </td>
+                                        <td>CorelDraw
+                                            <img src="assets/img/corel.png" 
+                                                alt="corel logo">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spring Boot
+                                            <img src="assets/img/spring.png" 
+                                            alt="Spring logo">
+                                        </td>
+                                        <td>Adobe Photoshop
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                                            alt="photoshop logo"  />   
+                                        </td>
+                                    </tr>
+                                    <tr> 
+                                        <td>SQL
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" 
+                                            alt="mysql logo"  />
+                                        </td>
+                                        <td>Adobe illustrator
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg"
+                                            alt="illustrator logo"  />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Html
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                            alt="html5 logo"  />
+                                        </td>
+                                        <td>Adobe Premiere
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg"
+                                            alt="premierepro logo"  />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Css
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                            alt="css3 logo"  />
+                                        </td>
+                                        <td>Adobe After Effects
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg"
+                                            alt="aftereffects logo"  />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>JavaScript
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                            alt="javascript logo"  />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>TypeScript
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                            alt="typescript logo"  />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>React
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                            alt="react logo"  />
+                                        </td>
+                                    </tr>
+                                
+                                </tbody>
+                        
+                            </table>
+                        </div>
+                    </article>
               </div>
          </section>
 

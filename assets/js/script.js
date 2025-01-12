@@ -51,7 +51,7 @@ formulario.addEventListener('submit', function(event) {
 
     //Evento de clique (onfocus)
 function highLightInput(element){
-    element.style.backgroundColor="#6959CD"
+    element.style.backgroundColor="#308af1ea"
     }
 
     //Evento de clique fora (onblur)
