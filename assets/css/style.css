@@ -172,7 +172,7 @@ h4 {
 }
 
 .home_container h2 {
-   margin: 16px 0;
+   margin: 10px 0;
    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    font-size: 20px;
    font-style: normal;
@@ -196,8 +196,8 @@ h4 {
 }
 
 .home_content_img {
-   width: 200px; 
-   height: 200px;
+   width: 450px; 
+   height: 450px;
 }
 
  /* Estilização da Seção About */
@@ -211,72 +211,11 @@ h4 {
  #conteudo{
    display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     gap: 2rem;
  }
 
-
-
- #table {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin: 20px auto;
-  
- }
-
- #table table{
-   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   font-size: 20px;
-   padding: 12px;
- }
-
- #table table thead tr td{
-   padding-bottom: 35px;
-   text-align: center;
-   font-weight: bold;
-   font-size: 22px;
-}
-
-
-#table table thead tr th{
-   padding-bottom: 12px;
-   text-align: left;
-   font-weight: bold;
-   font-size: 19px;
-}
-
-#table table tbody tr td{
-   padding-bottom: 10px;
-   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-#table table tbody tr td img{
-   margin-left: 10px;
-   vertical-align: middle;
-   height: 27px;
-   width: 27px;
-}
-
-#table tbody tr td:hover{
-   display: inline;
-   color: var(--ligth-blue3);
-   font-weight: bold;
-   font-size: 20px;
-   
- }
- 
- .border_table{
-   border: 2px solid black;
- }
-
- .align_table td{
-   justify-content: right;
-   padding-left: 120px;
-   padding-top: 10px;
- }
 
  .img_profile{
     width: 300px;
@@ -292,10 +231,28 @@ h4 {
 
  /* Estilização da Seção vídeo */
 
- #video{
+ #projetos{
     flex-direction: column;
     margin: 2rem auto;
     width: 90%;
+ }
+
+ #project{
+   display: flex;
+   gap: 2rem;
+ }
+
+ #projeto1{
+   
+   flex-direction: column;
+ }
+
+ #projeto2{
+   flex-direction: column;
+ }
+
+ h3{
+   margin-bottom: 20px;
  }
 
  /* Estilização da Seção Footer */
